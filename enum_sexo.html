@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no" charset="utf-8">
+<title>Solutions</title>
+	
+<link href="imagens/icone.png" rel="icon" />	
+<link href="css/sol.css" rel="stylesheet" />
+	
+<!-- Bootstrap -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+<body>
+	<section class="row justify-content-center vh-100">
+		<div class="col-12 col-sm-2 col-md-3 bg-dark"></div>
+		<div class="col-12 col-sm-8 col-md-6" style="background: url('imagens/fundo.png'); background-position: top; background-repeat: no-repeat;">
+			<div class="row justify-content-center">
+				<h5 class="d-block d-md-none pt-1">ricardomoreira@usp.br</h5>
+				<a class="d-block d-md-none text-danger h5 pl-4 pt-1" href="index.html">Sair</a>
+			</div>
+			<div class="row justify-content-center">
+				<div class="col-auto">
+					<br>
+					<h2>
+						Enum: <span class="sol-text-verde-es">Sexo</span>
+					</h2>
+					<br>
+				</div>
+			</div>
+			<!-- Enun -->
+			<section>
+				<div class="row justify-content-center sol-bg-verde-es" style="background: url('imagens/fundo_verde.png'); min-height: 200px; background-position: center; background-repeat: no-repeat;">
+					<div class="col-12  align-self-center">
+						<form class="form p-1">
+							<div class="row">
+								<div class="col-6 mt-1">
+									<div class="input-group input-group-sm">
+										<div class="input-group-prepend shadow">
+											<span class="input-group-text">nome*</span>
+										</div>
+										<input class="form-control" type="text" name="nome" value="sexo" placeholder="name do enum"/>
+									</div>
+								</div>
+								<div class="col-6">
+									<div class="row">
+										<div class="col-6 mt-1">
+											<a class="btn btn-primary btn-sm btn-block shadow" href="enum_sexo.html">Salvar</a>
+										</div>
+										<div class="col-6 mt-1">
+											<!-- Button trigger modal -->
+											<button type="button" class="btn btn-danger btn-sm btn-block shadow" data-toggle="modal" data-target="#modalPrincipal">Excluir</button>
+											<!-- Modal -->
+											<div class="modal fade" id="modalPrincipal" tabindex="-1" role="dialog" aria-hidden="true">
+												<div class="modal-dialog modal-dialog-centered" role="document">
+													<div class="modal-content">
+														<div class="modal-header">
+															<button type="button" class="close" data-dismiss="modal" aria-label="Close">&times;</button>
+														</div>
+														<div class="modal-body text-center">
+															Deseja mesmo excluir o enum 'sexo'?
+														</div>
+														<div class="modal-footer">
+															<a type="submit" class="btn btn-danger btn-sm" href="projeto.html">Excluir</a>
+															<button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Cancelar</button>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-12 mt-1">
+											<a class="btn btn-dark btn-sm btn-block shadow" href="projeto.html">Voltar Para o Projeto</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>			
+			</section>
+
+			<div class="row justify-content-center">
+				<!-- Novo tipo -->
+				<section class="col-12">
+					<!-- Button trigger modal -->
+					<button type="button" class="btn btn-link btn-block" data-toggle="modal" data-target="#novoTipo">Criar Novo Tipo</button>
+					<!-- Modal -->
+					<div class="modal fade" id="novoTipo" tabindex="-1" role="dialog" aria-hidden="true">
+						<div class="modal-dialog modal-dialog-centered" role="document">
+							<form class="modal-content">
+								<div class="modal-header">
+									<h5 class="modal-title">Criar Novo Tipo</h5>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">&times;</button>
+								</div>
+								<div class="modal-body pt-0">
+									<div class="row">
+										<div class="col-12 mt-2">
+											<div class="input-group input-group-sm">
+												<div class="input-group-prepend">
+													<span class="input-group-text">nome*</span>
+												</div>
+												<input class="form-control" type="text" name="nome" placeholder="name do tipo">
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="modal-footer">
+									<a class="btn btn-primary btn-sm" href="enum_sexo.html">Criar</a>
+									<a class="btn btn-secondary btn-sm" href="enum_sexo.html">Cancelar</a>
+								</div>
+							</form>
+						</div>
+					</div>			
+				</section>
+				
+				<!-- Tipos -->
+				<section>
+					<div class="row justify-content-center">
+						<div class="col-auto">
+							<div class="sol-border-preto-15 p-1 rounded">
+								<div class="row">
+									<div class="col-12">
+										<h5 class="text-center sol-text-preto-60">Tipos</h5>
+									</div>
+								</div>
+								
+								<!-- F -->
+								<div class="row">
+									<div class="col-sm-12 mt-1">
+										<!-- Button trigger modal -->
+										<button type="button" class="btn btn-link btn-sm btn-block" data-toggle="modal" data-target="#tipoF">
+											F
+										</button>
+										<!-- Modal -->
+										<div class="modal fade" id="tipoF" tabindex="-1" role="dialog" aria-hidden="true">
+											<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+												<form class="modal-content" enctype="multipart/form-data">
+													<!-- Nome -->
+													<div class="modal-header">
+														<h5 class="font-verdana p-0">F</h5>
+														<button type="button" class="close" data-dismiss="modal" aria-label="Close">&times;</button>
+													</div>
+
+													<div class="modal-body">
+														<div class="row">
+															<!-- nome -->
+															<div class="col-6 mt-1">
+																<div class="input-group input-group-sm">
+																	<div class="input-group-prepend">
+																		<span class="input-group-text">nome*</span>
+																	</div>
+																	<input class="form-control" type="text" name="nome" value="F" placeholder="name do tipo" required>
+																</div>
+															</div>
+															<!-- botoes -->
+															<div class="col-6 mt">
+																<div class="row">
+																	<div class="col mt-1">
+																		<a class="btn btn-primary btn-sm btn-block" href="enum_sexo.html">Salvar</a>
+																	</div>
+																	<div class="col mt-1">
+																		<!-- Button trigger modal -->
+																		<button type="button" class="btn btn-danger btn-sm btn-block" data-toggle="modal" data-target="#modalF">Excluir</button>
+																		<!-- Modal -->
+																		<div class="modal fade" id="modalF" tabindex="-1" role="dialog" aria-hidden="true">
+																			<div class="modal-dialog modal-dialog-centered" role="document">
+																				<div class="modal-content">
+																					<div class="modal-header">
+																						<button type="button" class="close" data-dismiss="modal" aria-label="Close">&times;</button>
+																					</div>
+																					<div class="modal-body text-center">
+																						Deseja mesmo excluir o tipo 'F'?
+																					</div>
+																					<div class="modal-footer">
+																						<a class="btn btn-danger btn-sm" href="enum_sexo.html">Excluir</a>
+																						<a class="btn btn-secondary btn-sm" href="enum_sexo.html">Cancelar</a>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="modal-footer">
+														<a class="btn btn-secondary btn-sm"href="enum_sexo.html">Cancelar</a>
+													</div>
+												</form>
+											</div>
+										</div>
+									</div>
+								</div>
+								
+								<!-- M -->
+								<div class="row">
+									<div class="col-sm-12 mt-1">
+										<!-- Button trigger modal -->
+										<button type="button" class="btn btn-link btn-sm btn-block" data-toggle="modal" data-target="#tipoM">
+											M
+										</button>
+										<!-- Modal -->
+										<div class="modal fade" id="tipoM" tabindex="-1" role="dialog" aria-hidden="true">
+											<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+												<form class="modal-content" enctype="multipart/form-data">
+													<!-- Nome -->
+													<div class="modal-header">
+														<h5 class="font-verdana p-0">M</h5>
+														<button type="button" class="close" data-dismiss="modal" aria-label="Close">&times;</button>
+													</div>
+
+													<div class="modal-body">
+														<div class="row">
+															<!-- nome -->
+															<div class="col-6 mt-1">
+																<div class="input-group input-group-sm">
+																	<div class="input-group-prepend">
+																		<span class="input-group-text">nome*</span>
+																	</div>
+																	<input class="form-control" type="text" name="nome" value="M" placeholder="name do tipo" required>
+																</div>
+															</div>
+															<!-- botoes -->
+															<div class="col-6 mt">
+																<div class="row">
+																	<div class="col mt-1">
+																		<a class="btn btn-primary btn-sm btn-block" href="enum_sexo.html">Salvar</a>
+																	</div>
+																	<div class="col mt-1">
+																		<!-- Button trigger modal -->
+																		<button type="button" class="btn btn-danger btn-sm btn-block" data-toggle="modal" data-target="#modalM">Excluir</button>
+																		<!-- Modal -->
+																		<div class="modal fade" id="modalM" tabindex="-1" role="dialog" aria-hidden="true">
+																			<div class="modal-dialog modal-dialog-centered" role="document">
+																				<div class="modal-content">
+																					<div class="modal-header">
+																						<button type="button" class="close" data-dismiss="modal" aria-label="Close">&times;</button>
+																					</div>
+																					<div class="modal-body text-center">
+																						Deseja mesmo excluir o tipo 'M'?
+																					</div>
+																					<div class="modal-footer">
+																						<a class="btn btn-danger btn-sm" href="enum_sexo.html">Excluir</a>
+																						<a class="btn btn-secondary btn-sm" href="enum_sexo.html">Cancelar</a>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="modal-footer">
+														<a class="btn btn-secondary btn-sm"href="enum_sexo.html">Cancelar</a>
+													</div>
+												</form>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>				
+				</section>
+			</div>
+
+		</div>
+		<div class="col-12 col-sm-2 col-md-3 bg-dark">
+			<div class="row row justify-content-end">
+				<div class="col-auto">
+					<h5 class="d-none d-md-block sol-text-branco pt-1 pr-1">ricardomoreira@usp.br</h5>
+				</div>
+				<div class="col-auto">
+					<a class="d-none d-md-block text-danger h5 pl-4 pt-1 pr-1" href="index.html">Sair</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>	
+</body>
+</html>

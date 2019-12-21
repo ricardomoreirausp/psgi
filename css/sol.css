@@ -1,0 +1,126 @@
+.sol-bg-cinza {background-color: #D0D0D0 !important;}
+.sol-bg-cinza-md {background-color: #A7A7A7 !important;}
+.sol-bg-cinza-es {background-color: #7E7E7E !important;}
+.sol-bg-vermelho {background-color: #FF3232 !important;}
+.sol-bg-vermelho-md {background-color: #CC2828 !important;}
+.sol-bg-vermelho-es {background-color: #9A1E1E !important;}
+.sol-bg-laranja {background-color: #FF9832 !important;}
+.sol-bg-laranja-md {background-color: #CC7A28 !important;}
+.sol-bg-laranja-es {background-color: #9A5C1E !important;}
+.sol-bg-azul {background-color: #00CCFF !important;}
+.sol-bg-azul-md {background-color: #00A4CC !important;}
+.sol-bg-azul-es {background-color: #007B99 !important;}
+.sol-bg-verde {background-color: #009933 !important;}
+.sol-bg-verde-md {background-color: #007B29 !important;}
+.sol-bg-verde-es {background-color: #005C1F !important;}
+
+.sol-bg-branco {background-color: #FFFFFF !important;}
+.sol-bg-preto-90 {background-color: #1A1A1A !important;}
+.sol-bg-preto-80 {background-color: #333333 !important;}
+.sol-bg-preto-70 {background-color: #4D4D4D !important;}
+.sol-bg-preto-60 {background-color: #676767 !important;}
+.sol-bg-preto-50 {background-color: #808080 !important;}
+.sol-bg-preto-40 {background-color: #999999 !important;}
+.sol-bg-preto-30 {background-color: #B3B3B3 !important;}
+.sol-bg-preto-20 {background-color: #CCCCCC !important;}
+.sol-bg-preto-10 {background-color: #E6E6E6 !important;}
+.sol-bg-preto-25 {background-color: #BFBFBF !important;}
+.sol-bg-preto-15 {background-color: #D8D8D8 !important;}
+.sol-bg-preto-05 {background-color: #F2F2F2 !important;}
+
+.sol-bg-gradient {background-image: linear-gradient(#999999, #FFFFFF);}
+
+.sol-text-cinza {color: #D0D0D0 !important;}
+.sol-text-cinza-md {color: #A7A7A7 !important;}
+.sol-text-cinza-es {color: #7E7E7E !important;}
+.sol-text-vermelho {color: #FF3232 !important;}
+.sol-text-vermelho-md {color: #CC2828 !important;}
+.sol-text-vermelho-es {color: #9A1E1E !important;}
+.sol-text-laranja {color: #FF9832 !important;}
+.sol-text-laranja-md {color: #CC7A28 !important;}
+.sol-text-laranja-es {color: #9A5C1E !important;}
+.sol-text-azul {color: #00CCFF !important;}
+.sol-text-azul-md {color: #00A4CC !important;}
+.sol-text-azul-es {color: #007B99 !important;}
+.sol-text-verde {color: #009933 !important;}
+.sol-text-verde-md {color: #007B29 !important;}
+.sol-text-verde-es {color: #005C1F !important;}
+
+.sol-text-branco {color: #FFFFFF !important;}
+.sol-text-preto-90 {color: #1A1A1A !important;}
+.sol-text-preto-80 {color: #333333 !important;}
+.sol-text-preto-70 {color: #4D4D4D !important;}
+.sol-text-preto-60 {color: #676767 !important;}
+.sol-text-preto-50 {color: #808080 !important;}
+.sol-text-preto-40 {color: #999999 !important;}
+.sol-text-preto-30 {color: #B3B3B3 !important;}
+.sol-text-preto-20 {color: #CCCCCC !important;}
+.sol-text-preto-10 {color: #E6E6E6 !important;}
+.sol-text-preto-25 {color: #BFBFBF !important;}
+.sol-text-preto-15 {color: #D8D8D8 !important;}
+.sol-text-preto-05 {color: #F2F2F2 !important;}
+
+.sol-text-link-2 {color: #003DFF !important;}
+
+.sol-border-cinza {border-color: #D0D0D0 !important;}
+.sol-border-cinza-md {border-color: #A7A7A7 !important;}
+.sol-border-cinza-es {border-color: #7E7E7E !important;}
+.sol-border-vermelho {border-color: #FF3232 !important; border: 1.2px; border-style: solid;}
+.sol-border-vermelho-md {border-color: #CC2828 !important; border: 1.2px; border-style: solid;}
+.sol-border-vermelho-es {border-color: #9A1E1E !important; border: 1.2px; border-style: solid;}
+.sol-border-laranja {border-color: #FF9832 !important; border: 1.2px; border-style: solid;}
+.sol-border-laranja-md {border-color: #CC7A28 !important; border: 1.2px; border-style: solid;}
+.sol-border-laranja-es {border-color: #9A5C1E !important; border: 1.2px; border-style: solid;}
+.sol-border-azul {border-color: #00CCFF !important; border: 1.2px; border-style: solid;}
+.sol-border-azul-md {border-color: #00A4CC !important; border: 1.2px; border-style: solid;}
+.sol-border-azul-es {border-color: #007B99 !important; border: 1.2px; border-style: solid;}
+.sol-border-verde {border-color: #009933 !important; border: 1.2px; border-style: solid;}
+.sol-border-verde-md {border-color: #007B29 !important; border: 1.2px; border-style: solid;}
+.sol-border-verde-es {border-color: #005C1F !important; border: 1.2px; border-style: solid;}
+
+.sol-border-branco {border-color: #FFFFFF !important; border: 1.2px; border-style: solid;}
+.sol-border-preto-90 {border-color: #1A1A1A !important; border: 1.2px; border-style: solid;}
+.sol-border-preto-80 {border-color: #333333 !important; border: 1.2px; border-style: solid;}
+.sol-border-preto-70 {border-color: #4D4D4D !important; border: 1.2px; border-style: solid;}
+.sol-border-preto-60 {border-color: #676767 !important; border: 1.2px; border-style: solid;}
+.sol-border-preto-50 {border-color: #808080 !important; border: 1.2px; border-style: solid;}
+.sol-border-preto-40 {border-color: #999999 !important; border: 1.2px; border-style: solid;}
+.sol-border-preto-30 {border-color: #B3B3B3 !important; border: 1.2px; border-style: solid;}
+.sol-border-preto-20 {border-color: #CCCCCC !important; border: 1.2px; border-style: solid;}
+.sol-border-preto-10 {border-color: #E6E6E6 !important; border: 1.2px; border-style: solid;}
+.sol-border-preto-25 {border-color: #BFBFBF !important; border: 1.2px; border-style: solid;}
+.sol-border-preto-15 {border-color: #D8D8D8 !important; border: 1.2px; border-style: solid;}
+.sol-border-preto-05 {border-color: #F2F2F2 !important; border: 1.2px; border-style: solid;}
+
+.sol-font-1 {font-size: 1px !important;}
+.sol-font-2 {font-size: 2px !important;}
+.sol-font-3 {font-size: 3px !important;}
+.sol-font-4 {font-size: 4px !important;}
+.sol-font-5 {font-size: 5px !important;}
+.sol-font-6 {font-size: 6px !important;}
+.sol-font-7 {font-size: 7px !important;}
+.sol-font-8 {font-size: 8px !important;}
+.sol-font-9 {font-size: 9px !important;}
+.sol-font-10 {font-size: 10px !important;}
+.sol-font-11 {font-size: 11px !important;}
+.sol-font-12 {font-size: 12px !important;}
+.sol-font-13 {font-size: 13px !important;}
+.sol-font-14 {font-size: 14px !important;}
+.sol-font-15 {font-size: 15px !important;}
+.sol-font-16 {font-size: 16px !important;}
+.sol-font-17 {font-size: 17px !important;}
+.sol-font-18 {font-size: 18px !important;}
+.sol-font-19 {font-size: 19px !important;}
+.sol-font-20 {font-size: 20px !important;}
+.sol-font-22 {font-size: 22px !important;}
+.sol-font-25 {font-size: 25px !important;}
+.sol-font-28 {font-size: 28px !important;}
+.sol-font-32 {font-size: 32px !important;}
+
+.custom-file-input ~ .custom-file-label::after {
+    content: "selecione um arquivo *.sol";
+}
+
+body{
+	overflow-y: scroll;
+}

@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no" charset="utf-8">
+<title>Solutions</title>
+	
+<link href="imagens/icone.png" rel="icon" />	
+<link href="css/sol.css" rel="stylesheet" />
+	
+<!-- Bootstrap -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<script type="text/javascript">
+	$().ready(function() {
+		$('input[type=radio]').click(function() {
+			if (!$(this).hasClass('ativo')) {
+				$(this).addClass('ativo');
+				exit;
+			} else {
+				$(this).prop('checked', false).removeClass('ativo');
+			}
+		});
+	});
+</script>
+</head>
+<body>
+	<section class="row justify-content-center vh-100">
+		<div class="col-12 col-sm-2 col-md-3 bg-dark"></div>
+		<div class="col-12 col-sm-8 col-md-6" style="background: url('imagens/fundo.png'); background-position: top; background-repeat: no-repeat;">
+			<div class="row justify-content-center">
+				<h5 class="d-block d-md-none pt-1">ricardomoreira@usp.br</h5>
+				<a class="d-block d-md-none text-danger h5 pl-4 pt-1" href="index.html">Sair</a>
+			</div>
+			<div class="row justify-content-center">
+				<div class="col-auto">
+					<br>
+					<h2>
+						Classe: <span class="sol-text-laranja-es">Turma</span>
+					</h2>
+					<br>
+				</div>
+			</div>
+			<!-- Classe -->
+			<section>	
+				<div class="row justify-content-center sol-bg-laranja-es" style="background: url('imagens/fundo_laranja.png'); min-height: 200px; background-position: center; background-repeat: no-repeat;">
+					<div class="col-12  align-self-center">
+						<form class="form p-1">
+							<div class="row">
+								<div class="col-6 mt-1">
+									<div class="input-group input-group-sm">
+										<div class="input-group-prepend shadow">
+											<span class="input-group-text">nome*</span>
+										</div>
+										<input class="form-control" type="text" name="nome" value="Turma" placeholder="name da classe" required/>
+									</div>
+								</div>
+								<div class="col-6">
+									<div class="row">
+										<div class="col-6 mt-1">
+											<a class="btn btn-primary btn-sm btn-block shadow" href="classe_turma.html">Salvar</a>
+										</div>
+										<div class="col-6 mt-1">
+											<!-- Button trigger modal -->
+											<button type="button" class="btn btn-danger btn-sm btn-block shadow" data-toggle="modal" data-target="#classeExcluir">Excluir</button>
+											<!-- Modal -->
+											<div class="modal fade" id="classeExcluir" tabindex="-1" role="dialog" aria-hidden="true">
+												<div class="modal-dialog modal-dialog-centered" role="document">
+													<div class="modal-content">
+														<div class="modal-header">
+															<button type="button" class="close" data-dismiss="modal" aria-label="Close">&times;</button>
+														</div>
+														<div class="modal-body text-center">
+															Deseja mesmo excluir a classe 'Turma'?
+														</div>
+														<div class="modal-footer">
+															<a type="submit" class="btn btn-danger btn-sm" href="projeto.html">Excluir</a>
+															<button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Cancelar</button>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-12 mt-1">
+											<a class="btn btn-dark btn-sm btn-block shadow" href="projeto.html">Voltar Para o Projeto</a>
+										</div>
+									</div>
+								</div>
+								<section class="col-12 col-md-6 mt-1">
+									<div class="sol-bg-branco sol-border-preto-15 px-2 pb-2 pt-0 rounded">
+										<div class="row">
+											<div class="col-12 mt-2">
+												<div class="input-group input-group-sm">
+													<div class="input-group-prepend">
+														<span class="input-group-text">Tabela</span>
+													</div>
+													<input class="form-control" type="text" name="nameEntityTable" placeholder="name da tabela"/>
+												</div>
+											</div>
+											<div class="col-12 mt-2">
+												<div class="input-group input-group-sm">
+													<div class="input-group-prepend">
+														<span class="input-group-text">Schema</span>
+													</div>
+													<input class="form-control" type="text" name="schemaEntityTable" placeholder="name do schema"/>
+												</div>
+											</div>
+										</div>
+									</div>								
+								</section>
+								<section  class="col-12 col-md-6 mt-1">
+									<div class="px-2 py-1 sol-bg-branco sol-border-preto-15 rounded">
+										Gerar Métodos
+										<div class="form-check">
+											<input class="form-check-input" type="radio" name="metodosClasse" value="equals">
+											<label class="form-check-label">equals</label>
+										</div>
+										<div class="form-check">
+											<input class="form-check-input" type="radio" name="metodosClasse" value="equals">
+											<label class="form-check-label">equals e hashCode</label>
+										</div>										
+									</div>								
+								</section>
+							</div>
+						</form>
+					</div>
+				</div>		
+			</section>
+			<div class="row justify-content-center">
+				<!-- Novo Atributo -->
+				<section class="col-6">
+						<!-- Button trigger modal -->
+						<button type="button" class="btn btn-link btn-block" data-toggle="modal" data-target="#novoAtriduto">Criar Novo Atributo</button>
+						<!-- Modal -->
+						<div class="modal fade" id="novoAtriduto" tabindex="-1" role="dialog" aria-hidden="true">
+							<div class="modal-dialog modal-dialog-centered" role="document">
+								<form class="modal-content">
+									<div class="modal-header">
+										<h5 class="modal-title">Criar Novo Atributo</h5>
+										<button type="button" class="close" data-dismiss="modal" aria-label="Close">&times;</button>
+									</div>
+									<div class="modal-body pt-0">
+										<div class="row">
+											<div class="col-12 mt-2">
+												<div class="input-group input-group-sm">
+													<div class="input-group-prepend">
+														<span class="input-group-text">nome*</span>
+													</div>
+													<input class="form-control" type="text" name="nome" placeholder="name do atributo" required>
+												</div>
+											</div>
+											<div class="col-12 mt-2">
+												<div class="input-group input-group-sm">
+													<div class="input-group-prepend">
+														<span class="input-group-text">tipo*</span>
+													</div>
+													<select class="form-control form-control-sm" name="tipo">
+														<option>Aluno</option>
+														<option>Array[]</option>
+														<option>BigDecimal</option>
+														<option>Blob</option>
+														<option>Boolean</option>
+														<option>Byte</option>
+														<option>Character</option>
+														<option>Clob</option>
+														<option>Curso</option>
+														<option>Date</option>
+														<option>Double</option>
+														<option>Float</option>
+														<option>Integer</option>
+														<option>List<></option>
+														<option>LocalDate</option>
+														<option>LocalDateTime</option>
+														<option>LocalTime</option>
+														<option>Long</option>
+														<option>Month</option>
+														<option>Number</option>
+														<option>Set<></option>
+														<option>Sexo</option>
+														<option>Short</option>
+														<option>String</option>
+														<option>Time</option>
+														<option>Timestamp</option>
+														<option>boolean</option>
+														<option>byte</option>
+														<option>char</option>
+														<option>double</option>
+														<option>float</option>
+														<option>int</option>
+														<option>long</option>
+														<option>short</option>
+													</select>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="modal-footer">
+										<a class="btn btn-primary btn-sm" href="classe_turma.html">Criar</a>
+										<a class="btn btn-secondary btn-sm" href="classe_turma.html">Cancelar</a>
+									</div>
+								</form>
+							</div>
+						</div>
+				</section>
+				
+				<!-- Novo Atributo Predefinido -->
+				<section>
+					<!-- Button trigger modal -->
+					<button type="button" class="btn btn-link btn-block" data-toggle="modal" data-target="#novoAtributoPredefinido">Criar Novo Atributo Pré-difinido</button>
+					<!-- Modal -->
+					<div class="modal fade" id="novoAtributoPredefinido" tabindex="-1" role="dialog" aria-hidden="true">
+						<div class="modal-dialog modal-dialog-centered" role="document">
+							<form class="modal-content">
+								<div class="modal-header">
+									<h5 class="modal-title">Criar Novo Atributo Pré-difinido</h5>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">&times;</button>
+								</div>
+								<div class="modal-body pt-0">
+									<div class="row">
+										<div class="col-12 mt-2">
+											<div class="input-group input-group-sm">
+												<div class="input-group-prepend">
+													<span class="input-group-text">atributo*</span>
+												</div>
+												<select class="form-control form-control-sm">
+													<option>altura</option>
+													<option>aniversario</option>
+													<option>celular</option>
+													<option>cep</option>
+													<option>cnpj</option>
+													<option>cpf</option>
+													<option>data</option>
+													<option>dataHora</option>
+													<option>dia</option>
+													<option>email</option>
+													<option>endereco</option>
+													<option>hora</option>
+													<option>id</option>
+													<option>idade</option>
+													<option>mes</option>
+													<option>nascimento</option>
+													<option>observacoes</option>
+													<option>peso</option>
+													<option>rg</option>
+													<option>telefone</option>
+													<option>uf</option>
+												</select>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="modal-footer">
+									<a class="btn btn-primary btn-sm" href="classe_turma.html">Criar</a>
+									<a class="btn btn-secondary btn-sm" href="classe_turma.html">Cancelar</a>
+								</div>
+							</form>
+						</div>
+					</div>				
+				</section>
+				
+				<!-- Atributos -->
+				<section>
+					<div class="row justify-content-center">
+						<div class="col-auto">
+							<div class="sol-border-preto-15 p-1 rounded">
+								<div class="row">
+									<div class="col-12">
+										<h5 class="text-center sol-text-preto-60">Atributos</h5>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-sm-12 mt-1">
+									
+										<!-- Atributo(Integer) id -->
+										<!-- Button trigger modal -->
+										<button type="button" class="btn btn-link btn-sm" data-toggle="modal" data-target="#atributoId">
+											<span class="sol-text-link-2">Integer id</span></span>
+										</button>
+										<!-- Modal -->
+										<div class="modal fade" id="atributoId" tabindex="-1" role="dialog" aria-hidden="true">
+											<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+												<form class="modal-content" enctype="multipart/form-data">
+													<!-- Nome -->
+													<div class="modal-header">
+														<h5 class="font-verdana p-0">Atributo(Integer) id</h5>
+														<button type="button" class="close" data-dismiss="modal" aria-label="Close">&times;</button>
+													</div>
+
+													<div class="modal-body">
+														<div class="row">
+															<!-- tipo -->
+															<div class="col-4 mt-1">
+																<div class="input-group input-group-sm">
+																	<div class="input-group-prepend">
+																		<span class="input-group-text">tipo*</span>
+																	</div>
+																	<select class="form-control form-control-sm" name="tipo">
+																		<option>Aluno</option>
+																		<option>Array[]</option>
+																		<option>BigDecimal</option>
+																		<option>Blob</option>
+																		<option>Boolean</option>
+																		<option>Byte</option>
+																		<option>Character</option>
+																		<option>Clob</option>
+																		<option>Curso</option>
+																		<option>Date</option>
+																		<option>Double</option>
+																		<option>Float</option>
+																		<option>Integer</option>
+																		<option>List<></option>
+																		<option>LocalDate</option>
+																		<option>LocalDateTime</option>
+																		<option>LocalTime</option>
+																		<option>Long</option>
+																		<option>Month</option>
+																		<option>Number</option>
+																		<option>Set<></option>
+																		<option>Sexo</option>
+																		<option>Short</option>
+																		<option>String</option>
+																		<option>Time</option>
+																		<option>Timestamp</option>
+																		<option>boolean</option>
+																		<option>byte</option>
+																		<option>char</option>
+																		<option>double</option>
+																		<option>float</option>
+																		<option>int</option>
+																		<option>long</option>
+																		<option>short</option>
+																	</select>
+																</div>
+															</div>
+
+															<!-- nome -->
+															<div class="col-4 mt-1">
+																<div class="input-group input-group-sm">
+																	<div class="input-group-prepend">
+																		<span class="input-group-text">nome*</span>
+																	</div>
+																	<input class="form-control" type="text" name="nome" value="id" placeholder="name do atributo">
+																</div>
+															</div>
+															<!-- botoes -->
+															<div class="col-4 mt">
+																<div class="row">
+																	<div class="col mt-1">
+																		<a class="btn btn-primary btn-sm btn-block" href="classe_turma.html">Salvar</a>
+																	</div>
+																	<div class="col mt-1">
+																		<!-- Button trigger modal -->
+																		<button type="button" class="btn btn-danger btn-sm btn-block" data-toggle="modal" data-target="#modalBotaoCodigo">Excluir</button>
+																		<!-- Modal -->
+																		<div class="modal fade" id="modalBotaoCodigo" tabindex="-1" role="dialog" aria-hidden="true">
+																			<div class="modal-dialog modal-dialog-centered" role="document">
+																				<div class="modal-content">
+																					<div class="modal-header">
+																						<button type="button" class="close" data-dismiss="modal" aria-label="Close">&times;</button>
+																					</div>
+																					<div class="modal-body text-center">
+																						Deseja mesmo excluir o atributo 'codigo'?
+																					</div>
+																					<div class="modal-footer">
+																						<a class="btn btn-danger btn-sm" href="classe_turma.html">Excluir</a>
+																						<a class="btn btn-secondary btn-sm" href="classe_turma.html">Cancelar</a>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="row mt-1">
+															<!-- Annotations -->
+															<section class="col-12 col-md-4 mt-1">
+																<div class="px-2 py-1 sol-bg-branco sol-border-preto-15 rounded">
+																	<div class="form-check">
+																		<input class="form-check-input" type="radio" name="a" checked>
+																		<label class="form-check-label">@Id</label>
+																	</div>
+																	<div class="form-check">
+																		<input class="form-check-input" type="radio" name="a" >
+																		<label class="form-check-label">Atribudo de Busca</label>
+																	</div>
+																</div>							
+															</section>
+															
+															<section class="col-12 col-md-4 col-md-4 mt-1">
+																<div class="p-2 sol-bg-branco sol-border-preto-15 rounded">
+																	<div class="form-check">
+																		<input class="form-check-input" type="checkbox" name="z" checked>
+																		<label class="form-check-label">@GeneratedValue</label>
+																	</div>
+																	<div class="p-1 sol-bg-branco sol-border-preto-15 rounded">
+																		<div class="form-check">
+																			<input class="form-check-input" type="radio" name="b">
+																			<label class="form-check-label">GenerationType.TABLE</label>
+																		</div>
+																		<div class="form-check">
+																			<input class="form-check-input" type="radio" name="b">
+																			<label class="form-check-label">GenerationType.SEQUENCE</label>
+																		</div>	
+																		<div class="form-check">
+																			<input class="form-check-input" type="radio" name="b">
+																			<label class="form-check-label">GenerationType.IDENTITY</label>
+																		</div>	
+																		<div class="form-check">
+																			<input class="form-check-input" type="radio" name="b">
+																			<label class="form-check-label">GenerationType.AUTO</label>
+																		</div>																		
+																	</div>
+																</div>										
+															</section>
+														
+															<section class="col-12 col-sm-6 col-md-4 mt-1">
+																<div class="p-2 sol-bg-branco sol-border-preto-15 rounded">
+																	<div class="row">
+																		<div class="col-12">
+																			<p class="p-0 m-0">@Column</p>
+																		</div>
+																		<div class="col-12">
+																			<div class="p-1 mt-1 sol-bg-branco sol-border-preto-15 rounded">
+																				<div class="input-group input-group-sm">
+																					<div class="input-group-prepend">
+																						<span class="input-group-text">name</span>
+																					</div>
+																					<input class="form-control" type="text" name="nameColumn" placeholder="name">
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>																
+															</section>
+															
+															<section class="col-12 col-sm-6 col-md-4 mt-1">
+																<div class="p-2 sol-bg-branco sol-border-preto-15 rounded">
+																	<div class="row">
+																		<div class="col-12">
+																			<div class="p-2 sol-bg-branco sol-border-preto-15 rounded">
+																				<div class="form-check">
+																					<input class="form-check-input" type="radio" name="c">
+																					<label class="form-check-label">@Null</label>
+																				</div>	
+																				<div class="form-check">
+																					<input class="form-check-input" type="radio" name="c">
+																					<label class="form-check-label">@NotNull</label>
+																				</div>																					
+																				<div class="p-1 mt-1 sol-bg-branco sol-border-preto-15 rounded">
+																					<div class="input-group input-group-sm">
+																						<div class="input-group-prepend">
+																							<span class="input-group-text">message</span>
+																						</div>
+																						<input class="form-control" type="text" name="messageNotNull" placeholder="message">
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																		<div class="col-12 mt-1">
+																			<div class="p-2 sol-bg-branco sol-border-preto-15 rounded">
+																				<div class="form-check">
+																					<input class="form-check-input" type="radio" name="c">
+																					<label class="form-check-label">@ColumnDefault</label>
+																				</div>
+																				<div class="p-1 mt-1 sol-bg-branco sol-border-preto-15 rounded">
+																					<div class="input-group input-group-sm">
+																						<div class="input-group-prepend">
+																							<span class="input-group-text">value</span>
+																						</div>
+																						<input class="form-control" type="text" name="valorColumnDefault" placeholder="value">
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>															
+															</section>
+															
+															<section class="col-12 col-sm-6 col-md-4 mt-1">
+																<div class="p-2 sol-bg-branco sol-border-preto-15 rounded">
+																	<p class="p-0 m-0">@Min, @Max ou @Range</p>
+																	<div class="row">
+																		<div class="col-12 mt-1">
+																			<div class="p-1 sol-border-preto-15 rounded">
+																				<div class="input-group input-group-sm">
+																					<div class="input-group-prepend">
+																						<span class="input-group-text">message</span>
+																					</div>
+																					<input class="form-control" type="text" name="messageMinMaxRange" placeholder="message">
+																				</div>
+																			</div>
+																		</div>
+																		<div class="col-12 mt-1">
+																			<div class="p-1 sol-bg-branco sol-border-preto-15 rounded">
+																				<div class="input-group input-group-sm">
+																					<div class="input-group-prepend">
+																						<span class="input-group-text">min</span>
+																					</div>
+																					<input class="form-control" type="number" name="minMinMaxRange" placeholder="min">
+																				</div>
+																				<div class="input-group input-group-sm mt-1">
+																					<div class="input-group-prepend">
+																						<span class="input-group-text">max</span>
+																					</div>
+																					<input class="form-control" type="number" name="maxMinMaxRange" placeholder="max">
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>													
+															</section>
+														</div>
+													</div>
+
+													<div class="modal-footer">
+														<a class="btn btn-secondary btn-sm" href="classe_turma.html">Cancelar</a>
+													</div>
+												</form>
+											</div>
+										</div>
+										
+										<br>
+										<!-- Atributo(String) nome -->
+										<!-- Button trigger modal -->
+										<button type="button" class="btn btn-link btn-sm" data-toggle="modal" data-target="#atributoNome">
+											<span class="sol-text-link-2">String nome</span></span>
+										</button>
+										<!-- Modal -->
+										<div class="modal fade" id="atributoNome" tabindex="-1" role="dialog" aria-hidden="true">
+											<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+												<form class="modal-content" enctype="multipart/form-data">
+													<!-- Nome -->
+													<div class="modal-header">
+														<h5 class="font-verdana p-0">Atributo(String) nome</h5>
+														<button type="button" class="close" data-dismiss="modal" aria-label="Close">&times;</button>
+													</div>
+
+													<div class="modal-body">
+														<div class="row">
+															<!-- tipo -->
+															<div class="col-4 mt-1">
+																<div class="input-group input-group-sm">
+																	<div class="input-group-prepend">
+																		<span class="input-group-text">tipo*</span>
+																	</div>
+																	<select class="form-control form-control-sm" name="tipo">
+																		<option>Aluno</option>
+																		<option>Array[]</option>
+																		<option>BigDecimal</option>
+																		<option>Blob</option>
+																		<option>Boolean</option>
+																		<option>Byte</option>
+																		<option>Character</option>
+																		<option>Clob</option>
+																		<option>Curso</option>
+																		<option>Date</option>
+																		<option>Double</option>
+																		<option>Float</option>
+																		<option>Integer</option>
+																		<option>List<></option>
+																		<option>LocalDate</option>
+																		<option>LocalDateTime</option>
+																		<option>LocalTime</option>
+																		<option>Long</option>
+																		<option>Month</option>
+																		<option>Number</option>
+																		<option>Set<></option>
+																		<option>Sexo</option>
+																		<option>Short</option>
+																		<option>String</option>
+																		<option>Time</option>
+																		<option>Timestamp</option>
+																		<option>boolean</option>
+																		<option>byte</option>
+																		<option>char</option>
+																		<option>double</option>
+																		<option>float</option>
+																		<option>int</option>
+																		<option>long</option>
+																		<option>short</option>
+																	</select>
+																</div>
+															</div>
+
+															<!-- nome -->
+															<div class="col-4 mt-1">
+																<div class="input-group input-group-sm">
+																	<div class="input-group-prepend">
+																		<span class="input-group-text">nome*</span>
+																	</div>
+																	<input class="form-control" type="text" name="nome" value="nome" placeholder="name do atributo">
+																</div>
+															</div>
+															<!-- botoes -->
+															<div class="col-4 mt">
+																<div class="row">
+																	<div class="col mt-1">
+																		<a class="btn btn-primary btn-sm btn-block" href="classe_turma.html">Salvar</a>
+																	</div>
+																	<div class="col mt-1">
+																		<!-- Button trigger modal -->
+																		<button type="button" class="btn btn-danger btn-sm btn-block" data-toggle="modal" data-target="#modalBotaoNome">Excluir</button>
+																		<!-- Modal -->
+																		<div class="modal fade" id="modalBotaoNome" tabindex="-1" role="dialog" aria-hidden="true">
+																			<div class="modal-dialog modal-dialog-centered" role="document">
+																				<div class="modal-content">
+																					<div class="modal-header">
+																						<button type="button" class="close" data-dismiss="modal" aria-label="Close">&times;</button>
+																					</div>
+																					<div class="modal-body text-center">
+																						Deseja mesmo excluir o atributo 'nome'?
+																					</div>
+																					<div class="modal-footer">
+																						<a class="btn btn-danger btn-sm" href="classe_turma.html">Excluir</a>
+																						<a class="btn btn-secondary btn-sm" href="classe_turma.html">Cancelar</a>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="row mt-1">
+															<!-- Annotations -->
+															<section class="col-12 col-md-4 mt-1">
+																<div class="px-2 py-1 sol-bg-branco sol-border-preto-15 rounded">
+																	<div class="form-check">
+																		<input class="form-check-input" type="radio" name="d" checked>
+																		<label class="form-check-label">@Id</label>
+																	</div>
+																	<div class="form-check">
+																		<input class="form-check-input" type="radio" name="d">
+																		<label class="form-check-label">Atribudo de Busca</label>
+																	</div>
+																</div>							
+															</section>
+														
+															<section class="col-12 col-sm-6 col-md-4 mt-1">
+																<div class="p-2 sol-bg-branco sol-border-preto-15 rounded">
+																	<div class="row">
+																		<div class="col-12">
+																			<p class="p-0 m-0">@Column</p>
+																		</div>
+																		<div class="col-12">
+																			<div class="p-1 sol-border-preto-15 rounded">
+																				<div class="form-check">
+																					<input class="form-check-input" type="checkbox">
+																					<label class="form-check-label">unique</label>
+																				</div>
+																			</div>
+																			<div class="p-1 mt-1 sol-bg-branco sol-border-preto-15 rounded">
+																				<div class="input-group input-group-sm">
+																					<div class="input-group-prepend">
+																						<span class="input-group-text">name</span>
+																					</div>
+																					<input class="form-control" type="text" name="nameColumn" placeholder="name">
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>																
+															</section>
+															
+															<section class="col-12 col-sm-6 col-md-4 mt-1">
+																<div class="p-2 sol-bg-branco sol-border-preto-15 rounded">
+																	<div class="row">
+																		<div class="col-12">
+																			<div class="p-2 sol-bg-branco sol-border-preto-15 rounded">
+																				<div class="form-check">
+																					<input class="form-check-input" type="radio" name="e">
+																					<label class="form-check-label">@Null</label>
+																				</div>	
+																				<div class="form-check">
+																					<input class="form-check-input" type="radio" name="e">
+																					<label class="form-check-label">@NotNull</label>
+																				</div>	
+																				<div class="form-check">
+																					<input class="form-check-input" type="radio" name="e" checked>
+																					<label class="form-check-label">@NotEmpty</label>
+																				</div>	
+																				<div class="form-check">
+																					<input class="form-check-input" type="radio" name="e">
+																					<label class="form-check-label">@NotBlank</label>
+																				</div>																					
+																				<div class="p-1 mt-1 sol-bg-branco sol-border-preto-15 rounded">
+																					<div class="input-group input-group-sm">
+																						<div class="input-group-prepend">
+																							<span class="input-group-text">message</span>
+																						</div>
+																						<input class="form-control" type="text" name="messageNotNull" value="Nome é obrigatório" placeholder="message">
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																		<div class="col-12 mt-1">
+																			<div class="p-2 sol-bg-branco sol-border-preto-15 rounded">
+																				<div class="form-check">
+																					<input class="form-check-input" type="radio" name="e">
+																					<label class="form-check-label">@ColumnDefault</label>
+																				</div>
+																				<div class="p-1 mt-1 sol-bg-branco sol-border-preto-15 rounded">
+																					<div class="input-group input-group-sm">
+																						<div class="input-group-prepend">
+																							<span class="input-group-text">value</span>
+																						</div>
+																						<input class="form-control" type="text" name="valorColumnDefault" placeholder="value">
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>															
+															</section>
+															
+															<section class="col-12 col-sm-6 col-md-4 mt-1">
+																<div class="p-2 sol-bg-branco sol-border-preto-15 rounded">
+																	<div class="row">
+																		<div class="col-12">
+																			<div class="form-check">
+																				<input class="form-check-input" type="radio" name="f">
+																				<label class="form-check-label">@Size</label>
+																			</div>
+																			<div class="form-check">
+																				<input class="form-check-input" type="radio" name="f" checked>
+																				<label class="form-check-label">@Length</label>
+																			</div>
+																		</div>
+																	</div>
+																	<div class="row">
+																		<div class="col-12 mt-1">
+																			<div class="p-1 sol-border-preto-15 rounded">
+																				<div class="input-group input-group-sm">
+																					<div class="input-group-prepend">
+																						<span class="input-group-text">message</span>
+																					</div>
+																					<input class="form-control" type="text" name="messageMinMaxRange" value="Digite um nome com até 50 caracteres" placeholder="message">
+																				</div>
+																			</div>
+																		</div>
+																		<div class="col-12 mt-1">
+																			<div class="p-1 sol-bg-branco sol-border-preto-15 rounded">
+																				<div class="input-group input-group-sm">
+																					<div class="input-group-prepend">
+																						<span class="input-group-text">min</span>
+																					</div>
+																					<input class="form-control" type="number" name="minMinMaxRange" placeholder="min">
+																				</div>
+																				<div class="input-group input-group-sm mt-1">
+																					<div class="input-group-prepend">
+																						<span class="input-group-text">max</span>
+																					</div>
+																					<input class="form-control" type="number" name="maxMinMaxRange" value="50" placeholder="max">
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>													
+															</section>
+
+															<section class="col-12 col-sm-6 col-md-4 mt-1">
+																<div class="p-2 sol-bg-branco sol-border-preto-15 rounded">
+																	<div class="row">
+																		<div class="col-12">
+																			<div class="form-check">
+																				<input class="form-check-input" type="radio" name="g">
+																				<label class="form-check-label">@CreditCardNumber</label>
+																			</div>
+																			<div class="form-check">
+																				<input class="form-check-input" type="radio" name="g">
+																				<label class="form-check-label">@Email</label>
+																			</div>
+																			<div class="form-check">
+																				<input class="form-check-input" type="radio" name="g">
+																				<label class="form-check-label">@CPF</label>
+																			</div>
+																			<div class="form-check">
+																				<input class="form-check-input" type="radio" name="g">
+																				<label class="form-check-label">@CNPJ</label>
+																			</div>
+																			<div class="form-check">
+																				<input class="form-check-input" type="radio" name="g">
+																				<label class="form-check-label">@URL</label>
+																			</div>																			
+																		</div>
+																	</div>
+																	<div class="row">
+																		<div class="col-12 mt-1">
+																			<div class="p-1 sol-border-preto-15 rounded">
+																				<div class="input-group input-group-sm">
+																					<div class="input-group-prepend">
+																						<span class="input-group-text">message</span>
+																					</div>
+																					<input class="form-control" type="text" name="messageEspecial" placeholder="message">
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>													
+															</section>	
+
+															<section class="col-12 col-sm-6 col-md-4 mt-1">
+																<div class="p-2 sol-bg-branco sol-border-preto-15 rounded">
+																	<div class="row">
+																		<div class="col-12">
+																			<p class="p-0 m-0">@Pattern</p>
+																		</div>
+																		<div class="col-12">
+																			<div class="p-1 mt-1 sol-bg-branco sol-border-preto-15 rounded">
+																				<div class="input-group input-group-sm">
+																					<div class="input-group-prepend">
+																						<span class="input-group-text">regex</span>
+																					</div>
+																					<input class="form-control" type="text" name="regexPattern" placeholder="regex">
+																				</div>
+																			</div>
+																			<div class="p-1 mt-1 sol-bg-branco sol-border-preto-15 rounded">
+																				<div class="input-group input-group-sm">
+																					<div class="input-group-prepend">
+																						<span class="input-group-text">message</span>
+																					</div>
+																					<input class="form-control" type="text" name="messagePattern" placeholder="message">
+																				</div>
+																			</div>																			
+																		</div>
+																	</div>
+																</div>																
+															</section>															
+														</div>
+													</div>
+
+													<div class="modal-footer">
+														<a class="btn btn-secondary btn-sm" href="classe_turma.html">Cancelar</a>
+													</div>
+												</form>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>										
+				</section>
+			</div>
+
+		</div>
+		<div class="col-12 col-sm-2 col-md-3 bg-dark">
+			<div class="row row justify-content-end">
+				<div class="col-auto">
+					<h5 class="d-none d-md-block sol-text-branco pt-1 pr-1">ricardomoreira@usp.br</h5>
+				</div>
+				<div class="col-auto">
+					<a class="d-none d-md-block text-danger h5 pl-4 pt-1 pr-1" href="index.html">Sair</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
